@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .app {
+      height: 1200px;
+    }
+    .container {
+      border: 10px solid red;
+      margin: 10px;
+      overflow-y: visible;
+      height: 400px;
+    }
+
+    .child {
+      height: 600px;
+      background-color: aqua;
+    }
+    
+    .little {
+      height: 60px;
+      width: 60px;
+      background-color: black;
+      position: sticky;
+      top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="container">
+      <div>1234</div>
+      <div>1234</div>
+      <div>1234</div>
+      <div>1234</div>
+      <div>1234</div>
+      <div class="child">
+        <div class="little">小元素</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

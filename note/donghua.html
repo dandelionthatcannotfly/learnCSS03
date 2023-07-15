@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      height: 400px;
+      width: 400px;
+      border-radius: 200px;
+      box-shadow: 0px 16px 48px 16px rgba(0, 0, 0, .08), 0px 12px 32px rgba(0, 0, 0, .12), 0px 8px 16px -8px rgba(0, 0, 0, .16);
+
+      transition-property: width, transform;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0ms;
+
+      animation-name: circle;
+      animation-duration: 9s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes circle {
+      0% {
+        rotate: 0deg;
+      }
+
+      100% {
+        rotate: 360deg;
+      }
+    }
+
+
+    img:hover {
+      width: 700px;
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+
+<body>
+  <img
+    src="https://img-qn.51miz.com/preview/photo/00/01/51/25/new-P-1512587-3B8B5EADO.jpg!/quality/90/unsharp/true/compress/true/format/jpg/fw/300" />
+</body>
+
+</html>

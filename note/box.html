@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      
+    }
+
+    .first {
+      border: 1px solid red;
+      width: 100px;
+    }
+    .second {
+      /* box-sizing: border-box; */
+      margin: 5px;
+      border: 1px solid green;
+      height: 30px;
+      padding: 5px;
+    }
+
+    /* .first-line {} */
+
+    .second-line {
+      margin-top: 20px;
+      margin-left: 20px;
+      padding: 10px;
+      border: 10px solid blue;
+      line-height: 100px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first">123456</div>
+  <div class="second">123456</div>
+  <div>
+    <!-- <span class="first-line">自适应盒模型指的是，当盒模型不设置宽度时，盒模型相关组成部分的处理方式是如何的。
+      在父子盒模型中，给父元素设置宽度，而不给子元素设置宽度，那么子元素的宽度会默认跟父元素一样。这个时候，再给子元素设置margin，padding，border属性时，它都会一直嵌在父元素里面（水平方向上），而不是溢出。当给子元素设置了大于等于父元素的宽度值时，子元素将会从父元素里溢出来（水平方向上）。
+      
+      作者：lcing
+      链接：https://juejin.cn/post/7033983777211121677
+      来源：稀土掘金
+      著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</span> -->
+    <div>上</div>
+    <span class="second-line">1234</span>
+    <div>下</div>
+  </div>
+  <div class="test1">
+    <div class="test2"></div>
+  </div>
+</body>
+
+</html>
